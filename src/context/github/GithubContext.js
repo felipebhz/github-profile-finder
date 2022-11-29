@@ -1,4 +1,8 @@
+
 import { createContext, useReducer } from "react";
+// uncomment if needed to test API call
+//import { createContext, useReducer, useEffect } from "react";
+
 import GithubReducer from "./GithubReducer";
 
 const GithubContext = createContext()
@@ -35,6 +39,11 @@ export const GithubProvider = ({ children }) => {
     const setLoading = () => {
         dispatch({type: 'SET_LOADING'})
     }
+
+// uncomment if needed to test API call
+    // useEffect(() => {
+    //     fetchUsers()
+    // }, [])
 
     return <GithubContext.Provider value={{ users: state.users, loading: state.loading, fetchUsers }} >
         {children}
