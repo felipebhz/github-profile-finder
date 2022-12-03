@@ -1,4 +1,4 @@
-import { FaCodePen, FaStore, FaUserFriends, FaUsers } from 'react-icons/fa'
+import { FaCodepen, FaStore, FaUserFriends, FaUsers } from 'react-icons/fa'
 import { useEffect, useContext } from "react"
 import { useParams, Link } from 'react-router-dom'
 import Spinner from '../components/layout/Spinner'
@@ -116,7 +116,7 @@ function User() {
                     </div>
                 </div>
 
-                {/* <div className='w-full py-5 mb-6 rounded-lg shadow-md bg-base-100 stats'>
+                { <div className='w-full py-5 mb-6 rounded-lg shadow-md bg-base-100 stats'>
                     <div className='grid grid-cols-1 md:grid-cols-3'>
                         <div className='stat'>
                             <div className='stat-figure text-secondary'>
@@ -158,7 +158,7 @@ function User() {
                             </div>
                         </div>
                     </div>
-                </div> */}
+                </div> }
 
                 {/* <RepoList repos={repos} /> */}
             </div>
