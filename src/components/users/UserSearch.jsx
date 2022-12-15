@@ -39,7 +39,7 @@ function UserSearch() {
                     <div className="relative">
                         <input type="text" className="w-full pr-40 bg-gray-200 input input-lg text-black" placeholder="Search"
                             value={text} onChange={handleChange} />
-                        <button className="absolute top-0 right-0 rounded-l-none w-36 btn btn-lg">Go</button>
+                        <button className="absolute top-0 right-0 rounded-l-none w-36 btn btn-lg">Find it!</button>
                     </div>
                 </form>
             </div>
